@@ -1,0 +1,884 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+font-family: "lato";
+src: url("Lato-Bold.ttf");
+src: url("Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+font-family: "europa";
+src: url("europa-light-webfont.ttf");
+src: url("europa-light-webfont.woff") format("woff");
+}
+
+@font-face {
+font-family: "lato-light";
+src: url("Lato-Light.ttf");
+src: url("Lato-Light.woff") format("woff");
+}
+
+
+#firstrazor {
+	position: relative;
+	width: 100%;
+	vertical-align:top;
+	height: 750px;
+	background-repeat: no-repeat;
+}
+
+#secondrazor {
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	vertical-align:top;
+	height: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#firstrazor:after{
+	position: absolute;
+	vertical-align:top;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('background.png');
+	top: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	left: 0;
+	right: 0;
+	background-size: cover;
+	transform-origin: top left;
+	transform: skewY(-4deg);
+	z-index: 5;
+}
+
+#secondrazor:after{
+	overflow:hidden;
+	position: absolute;
+	vertical-align:top;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('forest.jpg');
+	background-size: cover;
+	top: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	left: 0;
+	right: 0;
+	margin-top: 0px;
+	transform-origin: top left;
+	transform: skewY(4deg);
+	z-index: -1;
+}
+
+div.ex{
+width:50%;
+position: relative;
+	z-index: 10;
+height:200px;
+background-color:#4f443a;
+display:inline-block;
+margin: 0;
+padding: 0;
+vertical-align:top;
+}
+
+div.ex2{
+	
+	position: relative;
+	z-index: 10;
+width:50%;
+height:200px;
+background-color:#7e8547;
+display:inline-block;
+margin: 0;
+padding: 0;
+
+vertical-align:top;
+}
+
+
+
+
+
+
+
+#details{
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	font-family: lato-light, Arial, sans-serif;
+	color: white;
+	max-width: 70%;
+	font-size: 16px;
+}
+
+li{
+	position: relative;
+	display: inline-block;
+	padding: 12px;
+	font-family: lato-light, Arial, sans-serif;
+	color: white;
+	float: right;
+}
+
+a{
+	text-decoration: none;
+    color: white;
+	font-family: lato-light, Arial, sans-serif;
+}
+
+
+ul{
+	position: fixed;
+	width: 100%;
+	z-index: 15;
+	right: 0;
+	margin-top: 0px;
+}
+
+
+#wrapper {
+	margin-left: 4vw;
+	position: relative;
+	z-index: 10;
+    width: 95%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#wrapper2{
+	margin-top: 75px;
+}
+
+
+
+
+
+@media (min-width: 973px){
+	
+	#aboutheading{
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: inline-block;
+	font-size: 44px;
+	width: 100%;
+}
+	
+	#reviewshead{
+	margin-top: 100px;
+	color: white;
+	font-size: 44px;
+	font-family: lato, Arial, sans-serif;
+}
+	
+	#hello{
+	margin-top: 100px;
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	display: inline-block;
+	margin-left: 5vw;
+	font-size: 44px;
+}
+	
+	#aboutme{
+	position: relative;
+	z-index: 10;
+	font-family: lato-light, Arial, sans-serif;
+	color: white;
+	max-width: 50%;
+	margin-left: 5vw;
+	font-size: 16px;
+}
+	
+	#title{
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	width: 50%;
+	margin-top: -50px;
+	text-align: center;
+	background-color: rgba(117, 19, 93, 0.73);
+	margin-left: 5vw;
+	font-size: 18px;
+}
+	
+	#second {
+	width: 65%;
+	position: relative;
+	z-index:10;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+	
+	#first {
+	position: relative;
+	width: 30vw;
+	height: 30vw;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+	margin-top: 100px;
+	border-bottom-left-radius: 30vw;
+	border-top-left-radius: 30vw;
+	border-top-right-radius: 30vw;
+	border-bottom-right-radius: 30vw;
+	border: 5px solid rgba(255, 255, 255, .5);
+	background-repeat: no-repeat;
+	background-image: url("profile.png");
+	background-position: center center;
+    vertical-align:top;
+	background-size: 35vw;
+	z-index: 10;
+    float:left; /* add this */
+}
+	
+	#third {
+	position: relative;
+	width: 300px;
+	height: 300px;
+    margin: 0;
+    padding: 0;
+	margin-top: 150px;
+	margin-right: 10px;	
+	border-bottom-left-radius: 300px;
+	border-top-left-radius: 300px;
+	border-top-right-radius: 300px;
+	border-bottom-right-radius: 300px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	background-repeat: no-repeat;
+	background-image: url("schorfie.png");
+    vertical-align:top;
+	background-position: center center;
+	background-size:320px;
+	z-index: 10;
+	float: right;
+     /* add this */
+}
+	
+#fourth {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	position: relative;
+	z-index:10;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}	
+	
+}
+
+@media (max-width: 972px){
+	#third{
+		
+	}
+	
+	#aboutheading{
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: inline-block;
+	font-size: 32px;
+	width: 100%;
+}
+	
+	#reviewshead{
+	margin-top: 100px;
+	color: white;
+	font-size: 32px;
+	font-family: lato, Arial, sans-serif;
+}
+	
+	#hello{
+	margin-top: 24px;
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 44px;
+}
+	
+	#aboutme{
+	position: relative;
+	z-index: 10;
+	font-family: lato-light, Arial, sans-serif;
+	color: white;
+	max-width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+}
+	
+	#title{
+	position: relative;
+	z-index: 10;
+	font-family: lato, Arial, sans-serif;
+	color: white;
+	width: auto;
+	margin-top: -50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: rgba(117, 19, 93, 0.73);
+	font-size: 18px;
+}
+	
+	#second {
+	width: 100%;
+	position: relative;
+	z-index:10;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#first{
+		position: relative;
+	width: 30vw;
+	height: 30vw;
+ 
+    margin: 0;
+    padding: 0;
+	margin-top: 100px;
+	border-bottom-left-radius: 30vw;
+	border-top-left-radius: 30vw;
+	border-top-right-radius: 30vw;
+	border-bottom-right-radius: 30vw;
+	border: 5px solid rgba(255, 255, 255, .5);
+	background-repeat: no-repeat;
+	background-image: url("profile.png");
+	background-position: center center;
+    vertical-align:top;
+	background-size: 35vw;
+	z-index: 10;
+     margin-left: auto;
+	margin-right: auto;
+	}
+	
+	#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 10;
+    width: 100%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+	
+	#fourth {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: relative;
+	z-index:10;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+	
+	#aboutsection{
+	width: 100%; 
+	text-align: center;
+}
+	
+	
+	#details{
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	font-family: lato-light, Arial, sans-serif;
+	color: white;
+	max-width: 98%;
+	font-size: 16px;
+}
+	
+}
+
+#aboutsection{
+	text-align: center;
+}
+
+#reviewsscroll{
+	height: 70%;
+	width: auto;
+	border: 4px solid transparent;
+	margin: 10%;
+	overflow-y: scroll;
+	text-align: center;
+	display: inline-block;
+}  
+
+#aboutservice{
+	color: white;
+	font-family: lato, Arial, sans-serif;
+	max-width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body{ 
+background: #2E3142;
+}
+ 
+#reviewimage{
+	background-image: url("romeo.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+    padding: 0;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	display: inline-block;
+}
+
+#reviewimage2{
+	background-image: url("otis.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+    padding: 0;
+	margin-top: 48px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	display: inline-block;
+}
+
+#reviewimage3{
+	background-image: url("alfie.png");
+	background-size: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+    padding: 0;
+	margin-top: 48px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	display: inline-block;
+}
+
+#reviewimage4{
+	background-image: url("bella.png");
+	background-size: 110px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	background-position: center center;
+    padding: 0;
+	margin-top: 48px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	display: inline-block;
+}
+
+#reviewdivider{
+	width: auto;
+	height: auto;
+}
+
+#reviewdividerlast{
+	width: auto;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+#reviewdetails{
+	width: auto;
+	height: auto;
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+	font-family: lato, Arial, sans-serif;
+}
+
+#actualreview{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	max-width: 75vw;
+	max-height: 10vw;
+	color: white;
+	margin-top: -40px;
+	font-size: 16px;
+	
+	font-family: lato-light, Arial, sans-serif;
+}
+
+#actualreviewlast{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	max-width: 75vw;
+	max-height: 10vw;
+	color: white;
+	margin-top: -40px;
+	font-size: 16px;
+	font-family: lato-light, Arial, sans-serif;
+}
+
+#line{
+	width: 50vw;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+#thanks {
+	text-size-adjust: 100%;
+	font-family: eurotile, Arial, sans-serif;
+    font-size: 2rem !important;
+	display: block;
+	
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    text-align: center;
+    color :white;
+}
+
+#message {
+	overflow-y: scroll;
+    height: 200px;
+	margin-top: 6px;
+	width: 600px;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	border-color: #ccc;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+#paragraph {
+	margin-top: 24px;
+	font-size: 24px;
+	color: white;
+	font-family: lato, Arial, sans-serif;
+	margin-bottom: 0px;
+}
+
+#send {
+	border: 2px solid white;
+	font-size: 24px;
+	width: 90%;
+	height: 50px;
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+	margin-bottom: 50px;
+}
+
+#sendtext {
+	border: 2px solid white;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	width: 200px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 50px;
+}
+
+
+	#sendtext:hover{
+	border: 2px solid white;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	width: 200px;
+	padding-top: 12px;
+	cursor: pointer;
+	padding-bottom: 12px;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 50px;
+}
+
+#name{
+    display: inline-block;
+	width: 280px;
+	margin-right: 12px;
+}
+
+#email{
+	width: 280px;
+    display: inline-block;
+	margin-left: 0px;
+}
+
+
+#input_box {
+	
+	margin-top: 6px;
+	width: 100%;
+	height: 50px;
+	font-family: europa, Arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	font-size: 24px;
+	border-color: #ccc;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+#text {
+    margin: 0 auto;
+	width: 100%;
+    text-align: left;
+}
+
+#messagetext {
+    margin: 0 auto;
+	width: 600px;
+    text-align: left;
+}
+
+#div {
+    text-align: center;
+}
+
+.form {
+	width: 75vw;
+}
+
+@media (max-width: 770px) {
+
+	#name{
+		margin-right: 0;
+   display: inline;
+}
+	
+	#third {
+}
+
+#email{
+	margin-left: 0;
+   display: inline;
+}
+	
+	#messagetext {
+    margin: 0 auto;
+	width: 90%;
+    text-align: left;
+}
+	#wrapper2{
+	margin-top: 75px;
+}
+	
+	#line {
+	margin-top: 25px;
+	width: 50vw;
+	color: white;
+}
+
+#thanks {
+	text-size-adjust: 100%;
+	font-family: eurotile, Arial, sans-serif;
+    font-size: 2rem !important;
+	display: block;
+	margin-top: 25px;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    text-align: center;
+    color : white;
+}
+
+#message {
+	overflow-y: scroll;
+    height: 200px;
+	margin-top: 6px;
+	width: 90%;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	border-color: #ccc;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+#paragraph {
+	margin-top: 24px;
+	font-size: 24px;
+	color: white;
+	font-family: lato, Arial, sans-serif;
+	margin-bottom: 0px;
+}
+
+#send {
+	border: 2px solid white;
+	font-size: 24px;
+	width: 90%;
+	height: 50px;
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 50px;
+}
+
+#sendtext {
+	border: 2px solid white;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	width: 90%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 50px;
+}
+	
+	#sendtext:hover{
+	border: 2px solid white;
+	font-size: 24px;
+	font-family: europa, Arial, sans-serif;
+	width: 90%;
+	cursor: pointer;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 50px;
+}
+
+#input_box {
+    margin-top: 6px;
+	width: 90%;
+	margin-left: 0;
+	margin-right: 0;
+	height: 50px;
+	font-family: europa, Arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	font-size: 24px;
+	border-color: #ccc;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+#text {
+    margin: 0 auto;
+	width: 90%;
+    text-align: left;
+}
+
+#div {
+    text-align: center;
+}
+
+label{
+	margin-top: 24px;
+	font-size: 24px;
+	font-family: lato, Arial, sans-serif;
+	float: left;
+}
+
+.form {
+	width: 75vw;
+}
+	
+
+	
+	
+	
+}
